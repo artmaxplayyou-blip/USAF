@@ -302,29 +302,7 @@ button[type="submit"]:hover {
     font-size: 0.9rem;
   }
   
-.copyright {
-  position: relative;
-  width: 100%;
-  margin-top: 2rem;
-  padding: 1rem 0;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-top: 1px solid rgba(224, 176, 128, 0.3);
-}
 
-.copyright p {
-  color: #e0b080;
-  font-size: 0.9rem;
-  margin: 0;
-  letter-spacing: 0.5px;
-}
-
-/* Адаптация для мобильных устройств */
-@media (max-width: 768px) {
-  .copyright p {
-    font-size: 0.8rem;
-  }
-}
 
 
 
