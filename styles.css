@@ -3,47 +3,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   overflow: hidden;
-  /* Плавный градиент в песочных тонах */
-  background: linear-gradient(
-    135deg,
-    #f5e8c9 0%,    /* Светлый песок */
-    #e8d0a9 50%,  /* Тёплый бежевый */
-    #d9b884 100%  /* Золотисто‑коричневый */
-  );
-  background-attachment: fixed; /* Фиксирует градиент при скролле */
-  transition: background 0.6s ease; /* Плавный переход при смене фона */
+  background: linear-gradient(135deg, #000000, #000000);
 }
 
-/* Фон с текстурой пустыни (улучшенная версия) */
+/* Фон с текстурой пустыни */
 body::before {
   content: "";
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  /* Комбинируем радиальный градиент и SVG-текстуру */
-  background-image: 
-    radial-gradient(
-      circle at 25% 25%,
-      rgba(245, 232, 201, 0.7), /* Цвет песка с прозрачностью */
-      rgba(217, 184, 132, 0.4)
-    ),
-    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100! viewBox="0 0 100 100"><path d="M0 50 Q25 75 50 50 T100 50! stroke="%23b89674! stroke-width="0.8! fill="none"/></svg>');
-  background-size: 
-    cover,        /* Радиальный градиент покрывает всё */
-    30px 30px;   /* Размер SVG-текстуры */
-  background-position: center;
-  opacity: 0.35;  /* Чуть усилили текстуру */
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100! viewBox="0 0 100 100"><path d="M0 50 Q25 75 50 50 T100 50! stroke="%23332211! stroke-width="1! fill="none"/></svg>');
+  background-size: cover;
+  opacity: 0.2;
   z-index: -1;
-  transition: opacity 0.4s ease; /* Плавное изменение прозрачности */
-}
-
-/* Эффект при наведении (опционально) */
-body:hover::before {
-  opacity: 0.5;
 }
 
 /* Экран загрузки */
@@ -315,4 +295,3 @@ button[type="submit"]:hover {
     font-size: 0.9rem;
   }
 }
-
