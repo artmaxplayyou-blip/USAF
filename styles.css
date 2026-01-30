@@ -6,10 +6,19 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  overflow: hidden;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: linear-gradient(
+    to bottom,
+    #f5e8c9 0%,   /* Песочный вверху */
+    #e8d0a9 50%,  /* Более тёплый бежевый в середине */
+    #d9b884 100% /* Оранжево‑коричневый внизу */
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Фон с текстурой пустыни */
@@ -294,4 +303,5 @@ button[type="submit"]:hover {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
+
 }
