@@ -6,14 +6,10 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  background: #f5e8c9; /* Песочный/бежевый — базовый пустынный тон */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  overflow: hidden;
+  background: linear-gradient(135deg, #faf287, #ccad60);
 }
 
 /* Фон с текстурой пустыни */
@@ -23,7 +19,7 @@ body::before {
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-image:
-    radial-gradient(circle at 25% 25%, rgba(224, 176, 128, 0.1), rgba(0,0,0,0)),
+    radial-gradient(circle at 25% 25%, rgba(250, 242, 135, 1), rgba(0,0,0,0)),
     url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100! viewBox="0 0 100 100"><path d="M0 50 Q25 75 50 50 T100 50! stroke="%23332211! stroke-width="1! fill="none"/></svg>');
   background-size: cover;
   opacity: 0.2;
@@ -298,6 +294,4 @@ button[type="submit"]:hover {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
-
 }
-
