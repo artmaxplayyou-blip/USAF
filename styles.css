@@ -9,7 +9,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   overflow: hidden;
-  background: linear-gradient(135deg, #000000, #000000);
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
 }
 
 /* Фон с текстурой пустыни */
@@ -19,7 +19,7 @@ body::before {
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-image:
-    radial-gradient(circle at 25% 25%, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+    radial-gradient(circle at 25% 25%, rgba(224, 176, 128, 0.1), rgba(0,0,0,0)),
     url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100! viewBox="0 0 100 100"><path d="M0 50 Q25 75 50 50 T100 50! stroke="%23332211! stroke-width="1! fill="none"/></svg>');
   background-size: cover;
   opacity: 0.2;
@@ -124,12 +124,12 @@ body::before {
 .welcome h2 {
   font-size: 2.4rem;
   margin-bottom: 1.5rem;
-  color: #000; /* Было #e0e0e0 — меняем на чёрный */
+  color: #e0e0e0;
 }
 .welcome p {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #000; /* Было #ccc — меняем на чёрный */
+  color: #ccc;
   margin-bottom: 2rem;
 }
 
@@ -141,7 +141,7 @@ body::before {
 .report-form h2 {
   font-size: 2.2rem;
   margin-bottom: 2rem;
-  color: #000; /* Было #e0b080 — меняем на чёрный */
+  color: #e0b080;
   text-align: center;
 }
 
@@ -155,7 +155,7 @@ body::before {
 label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #000; /* Было #ccc — меняем на чёрный */
+  color: #ccc;
   font-size: 1.1rem;
 }
 .icon {
@@ -295,4 +295,3 @@ button[type="submit"]:hover {
     font-size: 0.9rem;
   }
 }
-
