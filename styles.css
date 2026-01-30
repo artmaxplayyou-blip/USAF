@@ -124,12 +124,12 @@ body::before {
 .welcome h2 {
   font-size: 2.4rem;
   margin-bottom: 1.5rem;
-  color: #e0e0e0;
+  color: #000; /* Было #e0e0e0 — меняем на чёрный */
 }
 .welcome p {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #ccc;
+  color: #000; /* Было #ccc — меняем на чёрный */
   margin-bottom: 2rem;
 }
 
@@ -141,7 +141,7 @@ body::before {
 .report-form h2 {
   font-size: 2.2rem;
   margin-bottom: 2rem;
-  color: #e0b080;
+  color: #000; /* Было #e0b080 — меняем на чёрный */
   text-align: center;
 }
 
@@ -155,7 +155,7 @@ body::before {
 label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #ccc;
+  color: #000; /* Было #ccc — меняем на чёрный */
   font-size: 1.1rem;
 }
 .icon {
@@ -295,3 +295,4 @@ button[type="submit"]:hover {
     font-size: 0.9rem;
   }
 }
+
