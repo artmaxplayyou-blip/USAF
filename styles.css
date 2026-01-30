@@ -9,8 +9,15 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   overflow: hidden;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(
+    135deg,
+    #f5e8c9 0%,    /* Светлый песок */
+    #e8d0a9 50%,  /* Тёплый бежевый */
+    #d9b884 100%  /* Золотисто‑коричневый */
+  );
+  background-attachment: fixed;
 }
+
 
 /* Фон с текстурой пустыни */
 body::before {
@@ -295,3 +302,4 @@ button[type="submit"]:hover {
     font-size: 0.9rem;
   }
 }
+
